@@ -5,7 +5,10 @@ import com.example.SpringBootCRUD.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Controller
 public class EmployeeController {
@@ -28,8 +31,9 @@ public class EmployeeController {
         return "new_employee";
     }
 
+
     @PostMapping("/saveEmployee")
-    public String saveEmployee(@ModelAttribute("employee") Employee employee){
+    public String saveEmployee(@Valid @ModelAttribute("employee") Employee employee){
         //save employee to the database
         employeeService.saveEmployee(employee);
         return "redirect:/";

@@ -20,8 +20,9 @@ public class EmployeeServiceImp implements EmployeeService{
     }
 
     @Override
-    public void saveEmployee(Employee employee) {
-        this.employeeRepository.save(employee);
+    public Employee saveEmployee(Employee employee) {
+
+        return this.employeeRepository.save(employee);
     }
 
     @Override
@@ -32,16 +33,18 @@ public class EmployeeServiceImp implements EmployeeService{
             employee = optional.get();
         }
         else{
-            throw new RuntimeException("Employee not found for id " + id);
+            employee = null;
         }
         return employee;
     }
 
     @Override
-    public void deleteEmployee(Long id) {
+    public int deleteEmployee(Long id) {
         Optional<Employee> optional = employeeRepository.findById(id);
         if(optional.isPresent()){
             employeeRepository.deleteById(optional.get().getId());
+            employeeRepository.deleteAll();
+            return 1;
         }
         else{
             throw new RuntimeException("Employee not found for id " + id);

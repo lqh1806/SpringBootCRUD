@@ -1,0 +1,41 @@
+2022-07-25 11:09:01,123 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-07-25 11:09:01,154 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SpringBootCrudApplication using Java 1.8.0_202 on LQHUNG with PID 5308 (C:\Users\lequo\Desktop\Spring\Test\target\classes started by lequo in C:\Users\lequo\Desktop\Spring\Test)
+2022-07-25 11:09:01,182 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-07-25 11:09:01,217 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-25 11:09:01,217 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-25 11:09:01,718 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 11:09:01,756 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2022-07-25 11:09:02,312 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-25 11:09:02,321 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-25 11:09:02,321 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-25 11:09:02,322 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-07-25 11:09:02,382 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-25 11:09:02,382 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1159 ms
+2022-07-25 11:09:02,522 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-25 11:09:02,575 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-07-25 11:09:02,726 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-25 11:09:02,813 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-25 11:09:02,875 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-25 11:09:02,890 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-07-25 11:09:03,318 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-25 11:09:03,325 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 11:09:03,681 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 11:09:03,846 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2022-07-25 11:09:03,996 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-07-25 11:09:04,010 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-25 11:09:04,029 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-25 11:09:04,040 INFO o.s.b.StartupInfoLogger [restartedMain] Started SpringBootCrudApplication in 3.132 seconds (JVM running for 3.859)
+2022-07-25 11:18:34,077 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 11:18:34,077 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-07-25 11:18:38,129 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-07-25 11:18:38,154 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-1] Info level log message
+2022-07-25 11:24:47,113 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-5] Info level log message
+2022-07-25 11:25:20,061 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-6] Info level log message
+2022-07-25 11:25:40,304 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-7] Info level log message
+2022-07-25 11:48:05,546 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-10] Info level log message
+2022-07-25 11:48:06,423 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-2] Info level log message
+2022-07-25 11:48:07,103 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-1] Info level log message
+2022-07-25 11:50:20,292 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-5] Info level log message
+2022-07-25 11:50:20,951 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-6] Info level log message
+2022-07-25 11:50:57,617 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-7] Info level log message
+2022-07-25 11:50:58,390 INFO c.e.S.c.EmployeeRestController [http-nio-8080-exec-8] Info level log message

@@ -16,4 +16,11 @@ public class ExceptionController {
         // Trả về message của lỗi đầu tiên
         return new ErrorMessage(400, "Thieu thong tin");
     }
+
+    @ExceptionHandler(RuntimeException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)  // Nếu validate fail thì trả về 400
+    public ErrorMessage handleBindException(RuntimeException e) {
+        // Trả về message của lỗi đầu tiên
+        return new ErrorMessage(400, "Xoa khong thanh cong");
+    }
 }

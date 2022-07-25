@@ -1,11 +1,17 @@
 package com.example.SpringBootCRUD.model;
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "employees")
 public class Employee {
 
@@ -56,4 +62,20 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
+
+	public Employee(Long id, @NotBlank(message = "First name is mandatory") String firstName,
+			@NotBlank(message = "Last name is mandatory") String lastName,
+			@NotBlank(message = "Email is mandatory") String email) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+
+	public Employee() {
+		super();
+	}
+	
+	
 }
